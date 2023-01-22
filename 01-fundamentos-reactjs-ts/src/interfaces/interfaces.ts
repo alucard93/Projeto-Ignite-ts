@@ -1,3 +1,5 @@
+import { ImgHTMLAttributes } from "react";
+
 // INTERFACE POST
 export interface Author {
     name: string;
@@ -26,8 +28,6 @@ export interface CommentProps {
 }
 // FIM Interface Comment
 
-export interface AvatarProps {
+export interface AvatarProps extends ImgHTMLAttributes<HTMLImageElement> {
     hasBorder?: boolean;
-    src: string;
-    alt?: string;
 }
