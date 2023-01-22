@@ -18,7 +18,16 @@ export interface Content {
 }
 // FIM INTERFACE POST
 
+// Interface Comment
+
 export interface CommentProps {
     content: string;
     deleteComment: (comment: string) => void;
+}
+// FIM Interface Comment
+
+export interface AvatarProps {
+    hasBorder?: boolean;
+    src: string;
+    alt?: string;
 }
