@@ -4,7 +4,9 @@ import { Avatar } from '../Avatar/Avatar'
 import av from '../../assets/Ignite-logo.svg'
 import { useState } from 'react'
 
-export const Comment = ({ content, deleteComment }) => {
+import { CommentProps } from '../../interfaces/interfaces'
+
+export const Comment = ({ content, deleteComment }: CommentProps) => {
 
   const [likeCount, setLikeCount] = useState(0)
 

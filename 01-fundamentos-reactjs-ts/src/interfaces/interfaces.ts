@@ -1,3 +1,4 @@
+// INTERFACE POST
 export interface Author {
     name: string;
     role: string;
@@ -14,4 +15,10 @@ export interface PostProps {
 export interface Content {
     type: 'paragraph' | 'link';
     content: string;
+}
+// FIM INTERFACE POST
+
+export interface CommentProps {
+    content: string;
+    deleteComment: (comment: string) => void;
 }
